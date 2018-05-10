@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Assignment Five</title>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	    <script type="text/javascript" src="script.js"></script>
+	    <link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div align="center">
+			<div id="createDiv">
+				<h1>Create</h1>
+				<br/>
+				<label>Name</label><br/>
+				<input id="name" type="text" name="name"><br/>
+				<label>URL</label><br/>
+				<input id="url" type="text" name="url"><br/>
+				<label>Description</label><br/>
+				<input id="description" type="text" name="description"><br/>
+				<input onclick="createData()" id="create" type="submit" name="submit" value="create">
+			</div>
+ 			<div id="retrieveByIdDiv">
+				<h1>Read</h1>
+				<br/>
+				<label>ID</label><br/>
+				<input id= "IDToRetrieve" type="text" name="id"><br/>
+				<input type="submit" onclick="retrieveOne()" name="submit" value="retrieveById" id="retrieveById"><br/>
+				<label>Name</label><br/>
+				<input id="nameToRetrieve" type="text" name="name"><br/>
+				<input type="submit" onclick="retrieveByName()" name="submit" value="retrieveByName">
+			</div> 
+			<div>
+ 				<table id="displayTable" >
+					<tbody>
+						<tr>
+						<th>ID</th>
+						<th>Name</th>
+						<th>URL</th>
+
+						<th>Description</th>
+						<th>Date</th>
+					</tr>
+					</tbody>
+					
+				</table>
+				
+			</div>
+			<div id="readAllDiv">
+				<h1>Retrieve All</h1>
+				<br/>
+				<button id="displayBtn" onclick="retrieveData()">Display</button>
+			</div>
+			<div>
+				<table id="displayAllTable">
+					<tbody>
+						<tr>
+						<th>ID</th>
+						<th>Name</th>
+						<th>URL</th>
+						<th>Description</th>
+						<th>Date</th>
+					</tr>
+					</tbody>
+					
+				</table>
+			</div>
+			<div id="updateDiv">
+				<h1>Update</h1>
+				<br/>
+				<label>ID</label><br/>
+				<input id="updateId" type="text" name="id"><br/>
+				<label>Name</label><br/>
+				<input id="updateName" type="text" name="name"><br/>
+				<label>URL</label><br/>
+				<input id="updateURL" type="text" name="url"><br/>
+				<label>Description</label><br/>
+				<input id="updateDescription" type="text" name="description"><br/>
+				<input id="updateBtn" onclick="updateData()" type="submit" name="submit" value="update">
+			</div>
+			<div id="deleteDiv">
+				<h1>Delete</h1>
+				<br/>
+				<label>ID</label><br/>
+				<input id="id" type="text" name="id"><br/>
+				<input id="deleteBtn" onclick="deleteData()" type="submit" name="submit" value="delete">
+			</div>
+		</div>
+	</body>
+<html>
